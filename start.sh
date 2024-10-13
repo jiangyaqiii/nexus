@@ -66,6 +66,8 @@ fi
     show "正在删除现有的仓库..." "progress"
     rm -rf "$HOME/network-api"
     fi
+
+    sudo apt install build-essential -y
     
     # 克隆指定的 GitHub 仓库
     echo "正在克隆仓库..."
