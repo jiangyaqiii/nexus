@@ -4,7 +4,7 @@
 STATUS=$(systemctl is-active nexus.service)
 
 # 判断服务状态并输出相应信息
-if [ "$STATUS" = "active" ]; then
+if [ "$STATUS" = "active" ] || [ "$STATUS" = "activating" ]; then
     echo "运行中"
 else
     echo "停止"
